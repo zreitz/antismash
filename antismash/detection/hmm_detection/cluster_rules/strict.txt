@@ -502,3 +502,16 @@ RULE pyrrolidine
     CUTOFF 10
     NEIGHBOURHOOD 10
     CONDITIONS Glycos_transf_1 and Alpha-amylase and Aminotran_3 and DXP_synthase_N
+
+RULE NRP-siderophore
+    CATEGORY NRPS
+    COMMENT Non-ribosomal peptide siderophores
+    CUTOFF 40           # Pyoverdine (BGC0000413) is 38
+    NEIGHBOURHOOD 25    # Gobichelin (BGC0000366) is 20.1
+    CONDITIONS VibH_like or Cy_tandem or       # Siderophore-specific condensation domains
+               (cds(Condensation and AMP-binding) and (
+                    ((IBH_Asp or IBH_His or TBH_Asp) and not SBH_Asp) or        # OHHis/OHAsp, exclude syringomycins
+                    IPL or SalSyn or EntA or                                    # Sal/DHB
+                    (GrbD and GrbE) or (FbnL and FbnM) or FbnE or PvdP or       # Graminine/DMAQ/OHdioate/PVD
+                    (Orn_monoox and not KtzT) or Lys_monoox or VbsL             # Hydroxamate, exclude piperazates
+               ))
