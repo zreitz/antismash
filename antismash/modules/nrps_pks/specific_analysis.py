@@ -49,16 +49,16 @@ def specific_analysis(record: Record, results: NRPS_PKS_Results, options: Config
         logging.debug("No NRPS or PKS genes found, skipping analysis")
         return results
 
-    a_domains = get_a_domains_from_cds_features(record, nrps_pks_genes)
-    if a_domains:
-        logging.info("Predicting A domain substrate specificities with NRPSPredictor2")
-        results.add_method_results("NRPSPredictor2", run_nrpspredictor(a_domains, options))
+    # a_domains = get_a_domains_from_cds_features(record, nrps_pks_genes)
+    # if a_domains:
+    #     logging.info("Predicting A domain substrate specificities with NRPSPredictor2")
+    #     results.add_method_results("NRPSPredictor2", run_nrpspredictor(a_domains, options))
 
-    pks_results = run_pks_substr_spec_predictions(nrps_pks_genes)
-    for method, method_results in pks_results.items():
-        results.add_method_results(method, method_results)
-    consensus_pair = calculate_consensus_prediction(nrps_pks_genes, results.domain_predictions)
-    results.consensus, results.consensus_transat = consensus_pair
+    # pks_results = run_pks_substr_spec_predictions(nrps_pks_genes)
+    # for method, method_results in pks_results.items():
+    #     results.add_method_results(method, method_results)
+    # consensus_pair = calculate_consensus_prediction(nrps_pks_genes, results.domain_predictions)
+    # results.consensus, results.consensus_transat = consensus_pair
 
     candidate_cluster_predictions = analyse_biosynthetic_order(nrps_pks_genes, results.consensus, record)
     for prediction in candidate_cluster_predictions:

@@ -28,7 +28,7 @@ NAME = "hmmdetection"
 SHORT_DESCRIPTION = "HMM signature detection"
 DETECTION_STAGE = DetectionStage.AREA_FORMATION
 
-_STRICTNESS_LEVELS = ["strict", "relaxed", "loose"]
+_STRICTNESS_LEVELS = ["strict", "relaxed", "loose", "siderophore-only"]
 
 
 def _get_rule_files_for_strictness(strictness: str) -> List[str]:

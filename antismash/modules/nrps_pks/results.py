@@ -238,14 +238,14 @@ class NRPS_PKS_Results(ModuleResults):
                 assert isinstance(feature, ModularDomain)
 
                 domain.predictions.clear()
-                if domain.name in ["AMP-binding", "A-OX"]:
-                    self._annotate_a_domain(domain)
-                elif domain.name == "PKS_AT":
-                    self._annotate_at_domain(domain, "transatpks" in cds_feature.region.products)
-                elif domain.name == "CAL_domain":
-                    self._annotate_cal_domain(domain)
-                elif domain.name == "PKS_KR":
-                    self._annotate_kr_domain(domain)
+                # if domain.name in ["AMP-binding", "A-OX"]:
+                #     self._annotate_a_domain(domain)
+                # elif domain.name == "PKS_AT":
+                #     self._annotate_at_domain(domain, "transatpks" in cds_feature.region.products)
+                # elif domain.name == "CAL_domain":
+                #     self._annotate_cal_domain(domain)
+                # elif domain.name == "PKS_KR":
+                #     self._annotate_kr_domain(domain)
                 # otherwise one of many without prediction methods/relevance (PCP, Cglyc, etc)
 
                 for method, pred in domain.predictions.items():
@@ -265,6 +265,6 @@ class NRPS_PKS_Results(ModuleResults):
                     if module.module_type == module.types.PKS and "PKS_AT" not in domains:
                         substrate = "mal"
                     else:
-                        raise ValueError("missing substrate in non-transAT module: %s" % module)
+                        substrate = "xxx"
 
                 module.add_monomer(substrate, modify_substrate(module, substrate))
