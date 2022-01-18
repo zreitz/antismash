@@ -296,7 +296,7 @@ Thiaglutamate_I_RRE	RRE-DUF fusion protein in a 3-thiaglutamate cluster	25	RREFa
 Thiaglutamate_B_RRE	RRE-LanB fusion protein in a 3-thiaglutamate cluster	25	RREFam028.hmm
 PlpY_RRE	Discrete RRE protein in an alpha-keto beta-amino acid containing peptide cluster	25	RREFam029.hmm
 Cy_tandem	Duplicated cyclization domain found in siderophore clusters	250	Cy_tandem.hmm
-EntA	2,3-dihydro-2,3-dihydroxybenzoic acid dehydrogenase	330	EntA.hmm
+EntA	2,3-dihydro-2,3-dihydroxybenzoic acid dehydrogenase	200	EntA.hmm
 FbnE	Flavin-dependent monooxygenase found in fabrubactin cluster	500	FbnE.hmm
 FbnL	DMAQ biosynthesis protein found in fabrubactin cluster	40	FbnL.hmm
 FbnM	DMAQ biosynthesis protein found in fabrubactin cluster	140	FbnM.hmm
@@ -310,7 +310,7 @@ IPL	Isopyruvate lyase	135	IPL.hmm
 Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	400	Lys_monoox.hmm
 Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	500	Orn_monoox.hmm
 KtzT	Heme-dependent piperazate synthase (10.1038/nchembio.2411) not in siderophores	200	KtzT.hmm
-PvdP	Tyrosinase enzyme in pyoverdine chromophore maturation	100	PvdP.hmm
+PvdP	Tyrosinase enzyme in pyoverdine chromophore maturation	600	PvdP.hmm
 SalSyn	Salicylate synthase	350	SalSyn.hmm
 VbsL	PLP-dependent epimerase in vicibactin biosynthesis (10.1021/ja9056008)	550	VbsL.hmm
 VibH_like	VibH-like standalone condensation domain	400	VibH_like.hmm
