@@ -1,21 +1,24 @@
 Condensation	Condensation domain	20	Condensation.hmm
 AMP-binding	Adenylation domain	20	AMP-binding.hmm
-Cy_tandem	Duplicated cyclization domain found in siderophore clusters	250	Cy_tandem.hmm
-EntA	2,3-dihydro-2,3-dihydroxybenzoic acid dehydrogenase	330	EntA.hmm
-FbnE	Flavin-dependent monooxygenase found in fabrubactin cluster	500	FbnE.hmm
-FbnL	DMAQ biosynthesis protein found in fabrubactin cluster	40	FbnL.hmm
-FbnM	DMAQ biosynthesis protein found in fabrubactin cluster	140	FbnM.hmm
-GrbD	Graminine biosynthesis protein found in gramibactin cluster	175	GrbD.hmm
-GrbE	Graminine biosynthesis protein found in gramibactin cluster	250	GrbE.hmm
-IBH_Asp	Interface-associated aspartate beta-hydroxylase	400	IBH_Asp.hmm
-IBH_His	Interface-associated histidine beta-hydroxylase	450	IBH_His.hmm
-SBH_Asp	Syringomycin-type aspartate beta-hydroxylase not in siderophores	500	SBH_Asp.hmm
-TBH_Asp	T_E-associated aspartate beta-hydroxylase	450	TBH_Asp.hmm
-IPL	Isopyruvate lyase	135	IPL.hmm
-Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	400	Lys_monoox.hmm
-Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	500	Orn_monoox.hmm
-KtzT	Heme-dependent piperazate synthase (10.1038/nchembio.2411) not in siderophores	200	KtzT.hmm
-PvdP	Tyrosinase enzyme in pyoverdine chromophore maturation	100	PvdP.hmm
-SalSyn	Salicylate synthase	350	SalSyn.hmm
-VbsL	PLP-dependent epimerase in vicibactin biosynthesis (10.1021/ja9056008)	550	VbsL.hmm
-VibH_like	VibH-like standalone condensation domain	400	VibH_like.hmm
+Cy_tandem	Duplicated cyclization domain found in siderophore clusters	50	Cy_tandem.hmm
+EntA	2,3-dihydro-2,3-dihydroxybenzoic acid dehydrogenase	50	EntA.hmm
+FbnE	Flavin-dependent monooxygenase found in fabrubactin cluster	50	FbnE.hmm
+FbnL	DMAQ biosynthesis protein found in fabrubactin cluster	20	FbnL.hmm
+FbnM	DMAQ biosynthesis protein found in fabrubactin cluster	50	FbnM.hmm
+GrbD	Graminine biosynthesis protein found in gramibactin cluster	50	GrbD.hmm
+GrbE	Graminine biosynthesis protein found in gramibactin cluster	50	GrbE.hmm
+IBH_Asp	Interface-associated aspartate beta-hydroxylase	50	IBH_Asp.hmm
+IBH_His	Interface-associated histidine beta-hydroxylase	50	IBH_His.hmm
+SBH_Asp	Syringomycin-type aspartate beta-hydroxylase not in siderophores	50	SBH_Asp.hmm
+TBH_Asp	T_E-associated aspartate beta-hydroxylase	50	TBH_Asp.hmm
+IPL	Isopyruvate lyase	50	IPL.hmm
+Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	50	Lys_monoox.hmm
+Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	50	Orn_monoox.hmm
+KtzT	Heme-dependent piperazate synthase (10.1038/nchembio.2411) not in siderophores	50	KtzT.hmm
+PvdP	Tyrosinase enzyme in pyoverdine chromophore maturation	50	PvdP.hmm
+SalSyn	Salicylate synthase	50	SalSyn.hmm
+VbsL	PLP-dependent epimerase in vicibactin biosynthesis (10.1021/ja9056008)	50	VbsL.hmm
+VibH_like	VibH-like standalone condensation domain	50	VibH_like.hmm
+FecCD	FecCD transport family	26	FecCD.hmm
+TonB_dep_Rec	TonB dependent receptor	27	TonB_dep_Rec.hmm
+Peripla_BP_2	Periplasmic binding protein	27	Peripla_BP_2.hmm
