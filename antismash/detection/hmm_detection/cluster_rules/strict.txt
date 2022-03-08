@@ -7,6 +7,7 @@ RULE NRP-siderophore
                (cds(Condensation and AMP-binding) and (
                     ((IBH_Asp or IBH_His or TBH_Asp) and not SBH_Asp) or        # OHHis/OHAsp, exclude syringomycins
                     IPL or SalSyn or EntA or                                    # Sal/DHB
-                    (GrbD and GrbE) or (FbnL and FbnM) or FbnE or PvdP or       # Graminine/DMAQ/OHdioate/PVD
-                    (Orn_monoox and not KtzT) or Lys_monoox or VbsL             # Hydroxamate, exclude piperazates
+                    (GrbD and GrbE) or (FbnL and FbnM) or PvdP or       		# Graminine/DMAQ/PVD
+                    (Orn_monoox and not (KtzT or metRS-like) or					# Hydroxamate, exclude piperazates and hydrazides
+                    Lys_monoox or VbsL
                ))
