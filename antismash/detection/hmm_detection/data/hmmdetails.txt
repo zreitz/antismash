@@ -14,7 +14,7 @@ IPL	Isopyruvate lyase	100	IPL.hmm
 Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	300	Lys_monoox.hmm
 Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	400	Orn_monoox.hmm
 KtzT	Heme-dependent piperazate synthase (10.1038/nchembio.2411) not in siderophores	200	KtzT.hmm
-MetRS-like	Methionyl-tRNA synthase-like ligase (10.1038/s41467-021-27523-x) not in siderophores	360	MetRS-like
+MetRS-like	Methionyl-tRNA synthase-like ligase (10.1038/s41467-021-27523-x) not in siderophores	360	MetRS-like.hmm
 PvdP	Tyrosinase enzyme in pyoverdine chromophore maturation	600	PvdP.hmm
 SalSyn	Salicylate synthase	350	SalSyn.hmm
 VbsL	PLP-dependent epimerase in vicibactin biosynthesis (10.1021/ja9056008)	500	VbsL.hmm
