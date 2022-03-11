@@ -6,10 +6,10 @@ FbnL	DMAQ biosynthesis protein found in fabrubactin cluster	40	FbnL.hmm
 FbnM	DMAQ biosynthesis protein found in fabrubactin cluster	180	FbnM.hmm
 GrbD	Graminine biosynthesis protein found in gramibactin cluster	400	GrbD.hmm
 GrbE	Graminine biosynthesis protein found in gramibactin cluster	250	GrbE.hmm
-IBH_Asp	Interface-associated aspartate beta-hydroxylase	300	IBH_Asp.hmm
-IBH_His	Interface-associated histidine beta-hydroxylase	300	IBH_His.hmm
-SBH_Asp	Syringomycin-type aspartate beta-hydroxylase not in siderophores	300	SBH_Asp.hmm
-TBH_Asp	T_E-associated aspartate beta-hydroxylase	300	TBH_Asp.hmm
+IBH_Asp	Interface-associated aspartate beta-hydroxylase	440	IBH_Asp.hmm
+IBH_His	Interface-associated histidine beta-hydroxylase	470	IBH_His.hmm
+SBH_Asp	Syringomycin-type aspartate beta-hydroxylase not in siderophores	500	SBH_Asp.hmm
+TBH_Asp	T_E-associated aspartate beta-hydroxylase	420	TBH_Asp.hmm
 IPL	Isopyruvate lyase	100	IPL.hmm
 Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	300	Lys_monoox.hmm
 Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	400	Orn_monoox.hmm
