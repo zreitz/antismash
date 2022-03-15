@@ -2,6 +2,7 @@ Condensation	Condensation domain	20	Condensation.hmm
 AMP-binding	Adenylation domain	20	AMP-binding.hmm
 Cy_tandem	Duplicated cyclization domain found in siderophore clusters	250	Cy_tandem.hmm
 EntA	2,3-dihydro-2,3-dihydroxybenzoic acid dehydrogenase	205	EntA.hmm
+EntB	Isochorismatase	150	EntB.hmm
 FbnL	DMAQ biosynthesis protein found in fabrubactin cluster	40	FbnL.hmm
 FbnM	DMAQ biosynthesis protein found in fabrubactin cluster	180	FbnM.hmm
 GrbD	Graminine biosynthesis protein found in gramibactin cluster	400	GrbD.hmm
