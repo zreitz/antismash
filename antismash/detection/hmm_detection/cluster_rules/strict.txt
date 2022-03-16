@@ -1,3 +1,11 @@
+RULE NRPS
+    CATEGORY NRPS
+    COMMENT non-ribosomal peptide synthase
+    CUTOFF 2000
+    NEIGHBOURHOOD 2000
+    CONDITIONS cds(Condensation and AMP-binding)
+
+
 RULE NRP-siderophore
     CATEGORY NRPS
     COMMENT Non-ribosomal peptide siderophores
