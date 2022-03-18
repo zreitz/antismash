@@ -677,7 +677,7 @@ def run_antismash(sequence_file: Optional[str], options: ConfigType) -> int:
 def _run_antismash(sequence_file: Optional[str], options: ConfigType) -> int:
     """ The real run_antismash, assumes logging is set up around it """
     logging.info("antiSMASH version: %s", options.version)
-    _log_found_executables(options)
+    #_log_found_executables(options)
 
     if options.list_plugins:
         list_plugins()
