@@ -510,7 +510,8 @@ RULE NRP-siderophore
     NEIGHBOURHOOD 20    # Gobichelin (BGC0000366) is 20.1
     CONDITIONS VibH_like or Cy_tandem or       # Siderophore-specific condensation domains
                (cds(Condensation and AMP-binding) and (
-                    ((IBH_Asp or IBH_His or TBH_Asp) and not SBH_Asp) or        # OHHis/OHAsp, exclude syringomycins
+                    (IBH_Asp and not SBH_Asp) or IBH_His or TBH_Asp or 		    # OHHis/OHAsp, exclude syringomycins
+                    CyanoBH_Asp1 or CyanoBH_Asp2 or								# Cyanobacterial OHAsp
                     IPL or SalSyn or (EntA and EntC) or                         # Sal/DHB
                     (GrbD and GrbE) or (FbnL and FbnM) or PvdP or       		# Graminine/DMAQ/PVD
                     (Orn_monoox and not (KtzT or MetRS-like)) or				# Hydroxamate, exclude piperazates and hydrazides

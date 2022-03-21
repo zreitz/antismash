@@ -306,6 +306,8 @@ IBH_Asp	Interface-associated aspartate beta-hydroxylase	440	IBH_Asp.hmm
 IBH_His	Interface-associated histidine beta-hydroxylase	470	IBH_His.hmm
 SBH_Asp	Syringomycin-type aspartate beta-hydroxylase not in siderophores	500	SBH_Asp.hmm
 TBH_Asp	T_E-associated aspartate beta-hydroxylase	420	TBH_Asp.hmm
+CyanoBH_Asp1	Cyanobacterial siderophore Asp beta-hydroxylase (NRPS domain)	400	CyanoBH_Asp1.hmm
+CyanoBH_Asp2	Cyanobacterial siderophore Asp beta-hydroxylase (standalone)	450	CyanoBH_Asp2.hmm
 IPL	Isopyruvate lyase	100	IPL.hmm
 Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	300	Lys_monoox.hmm
 Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	400	Orn_monoox.hmm
