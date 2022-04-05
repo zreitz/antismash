@@ -513,7 +513,28 @@ RULE NRP-siderophore
                     (IBH_Asp and not SBH_Asp) or IBH_His or TBH_Asp or 		    # OHHis/OHAsp, exclude syringomycins
                     CyanoBH_Asp1 or CyanoBH_Asp2 or								# Cyanobacterial OHAsp
                     IPL or SalSyn or (EntA and EntC) or                         # Sal/DHB
-                    (GrbD and GrbE) or (FbnL and FbnM) or PvdP or       		# Graminine/DMAQ/PVD
+                    (GrbD and GrbE) or (FbnL and FbnM) or PvdO or PvdP or       # Graminine/DMAQ/PVD
                     (Orn_monoox and not (KtzT or MetRS-like)) or				# Hydroxamate, exclude piperazates and hydrazides
                     Lys_monoox or VbsL
                ))
+
+RULE methanobactin
+    CATEGORY other
+    COMMENT Copper-chelating peptides (10.1126/science.aap9437)
+    CUTOFF 20
+    NEIGHBOURHOOD 5
+    CONDITIONS MbnC
+
+RULE opine-like-zincophore
+    CATEGORY other
+    COMMENT Opine-like zincophores like staphylopine (10.1128/mSystems.00554-20)
+    CUTOFF 20
+    NEIGHBOURHOOD 5
+    CONDITIONS CntL and CntM
+
+RULE APCA
+    CATEGORY other
+    COMMENT Aminopolycarboxylic acid metallophores (10.1039/C8MT00009C)
+    CUTOFF 20
+    NEIGHBOURHOOD 5
+    CONDITIONS AesA and AesB and AesC

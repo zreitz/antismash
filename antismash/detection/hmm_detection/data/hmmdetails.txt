@@ -313,6 +313,7 @@ Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	300	Lys_monoox.hmm
 Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	415	Orn_monoox.hmm
 KtzT	Heme-dependent piperazate synthase (10.1038/nchembio.2411) not in siderophores	200	KtzT.hmm
 MetRS-like	Methionyl-tRNA synthase-like ligase (10.1038/s41467-021-27523-x) not in siderophores	360	MetRS-like.hmm
+PvdO	Oxidoreductase in pyoverdine chromophore maturation	250	PvdO.hmm
 PvdP	Tyrosinase enzyme in pyoverdine chromophore maturation	600	PvdP.hmm
 SalSyn	Salicylate synthase	350	SalSyn.hmm
 VbsL	PLP-dependent epimerase in vicibactin biosynthesis (10.1021/ja9056008)	570	VbsL.hmm
@@ -321,3 +322,12 @@ FecCD	FecCD transport family	26	FecCD.hmm
 TonB_dep_Rec	TonB dependent receptor	27	TonB_dep_Rec.hmm
 Peripla_BP_2	Periplasmic binding protein	27	Peripla_BP_2.hmm
 SIP	Siderophore-interacting protein	26	SIP.hmm
+
+CntL	NAS synthase found in opine-like zincophore clusters	100	CntL.hmm
+CntM	Staphylopine dehydrogenase found in opine-like zincophore clusters	100	CntM.hmm
+
+AesA	N-((2S)-2-amino-2-carboxyethyl)-L-glutamate dehydrogenase involved in APCA biosynthesis	300	AesA.hmm
+AesB	Pyridoxal-dependent decarboxylase involved in APCA biosynthesis	400	AesB.hmm
+AesC	N-(2-amino-2-carboxyethyl)-L-glutamate synthase involved in APCA biosynthesis	420	AesC.hmm
+
+MbnC	Methanobactin maturation protein MbnC	150	MbnC.hmm
