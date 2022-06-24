@@ -40,7 +40,7 @@ from antismash.outputs import html, svg
 from antismash.support import genefinding
 from antismash.custom_typing import AntismashModule
 
-__version__ = "6.1.0"
+__version__ = "6.2.0"
 
 
 def _gather_analysis_modules() -> List[AntismashModule]:
@@ -478,6 +478,7 @@ def write_outputs(results: serialiser.AntismashResults, options: ConfigType) -> 
         with tempfile.NamedTemporaryFile(prefix="as_zip_tmp", suffix=".zip") as temp:
             shutil.make_archive(temp.name.replace(".zip", ""), "zip", root_dir=options.output_dir)
             shutil.copy(temp.name, zipfile)
+            os.chmod(zipfile, 0o644)
         assert os.path.exists(zipfile)
 
 

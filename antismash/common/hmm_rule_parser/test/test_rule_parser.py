@@ -320,9 +320,33 @@ class RuleParserTest(unittest.TestCase):
             rules = self.parse("RULE name CATEGORY nope CUTOFF 20 NEIGHBOURHOOD 20 CONDITIONS a").rules
 
     def test_section_comments(self):
-        rules = self.parse("RULE name CATEGORY category COMMENT this is a section comment CUTOFF 20"
+        rules = self.parse("RULE name CATEGORY category DESCRIPTION this is a section comment CUTOFF 20"
                            " NEIGHBOURHOOD 20 CONDITIONS a").rules
-        assert len(rules) == 1 and rules[0].comments == "this is a section comment"
+        assert len(rules) == 1 and rules[0].description == "this is a section comment"
+
+    def test_example(self):
+        rules = self.parse("RULE name CATEGORY category DESCRIPTION this is a comment"
+                           " EXAMPLE NCBI Y16952.3 1-66669 balhimycin"
+                           " CUTOFF 20 NEIGHBOURHOOD 20 CONDITIONS a").rules
+        assert len(rules) == 1 and len(rules[0].examples) == 1 and \
+                rules[0].examples[0].database == "NCBI" and \
+                rules[0].examples[0].accession == "Y16952" and \
+                rules[0].examples[0].version == 3 and \
+                rules[0].examples[0].start == 1 and \
+                rules[0].examples[0].end == 66669 and \
+                rules[0].examples[0].compound_name == "balhimycin"
+
+    def test_multiple_examples(self):
+        rules = self.parse("RULE name CATEGORY category DESCRIPTION this is a comment"
+                           " EXAMPLE NCBI Y16952.3 1-66669 EXAMPLE NCBI EX12345.6 23-42 examplomycin dipeptide"
+                           " CUTOFF 20 NEIGHBOURHOOD 20 CONDITIONS a").rules
+        assert len(rules) == 1 and len(rules[0].examples) == 2 and \
+                rules[0].examples[1].database == "NCBI" and \
+                rules[0].examples[1].accession == "EX12345" and \
+                rules[0].examples[1].version == 6 and \
+                rules[0].examples[1].start == 23 and \
+                rules[0].examples[1].end == 42 and \
+                rules[0].examples[1].compound_name == "examplomycin dipeptide"
 
     def test_single_superior(self):
         rules = self.parse("RULE first CATEGORY category CUTOFF 20 NEIGHBOURHOOD 20 CONDITIONS a "
@@ -389,7 +413,7 @@ class RuleParserTest(unittest.TestCase):
 
     def test_bad_minscore(self):
         # negative scores
-        with self.assertRaisesRegex(ValueError, "cannot be negative"):
+        with self.assertRaisesRegex(rule_parser.RuleSyntaxError, "Expected int but found text"):
             self.parse(format_as_rule("A", 10, 20, "minscore(d, -1)"))
 
         # missing/invalid score syntax
@@ -447,7 +471,7 @@ class RuleParserTest(unittest.TestCase):
             self.parse(format_as_rule("A", 10, 10, "minimum(1.3 [a,b])"))
         with self.assertRaises(ValueError):
             self.parse(format_as_rule("A", 10, 10, "minimum(0, [a,b])"))
-        with self.assertRaises(ValueError):
+        with self.assertRaises(rule_parser.RuleSyntaxError):
             self.parse(format_as_rule("A", 10, 10, "minimum(-3, [a,b])"))
 
     def test_bad_identifier(self):

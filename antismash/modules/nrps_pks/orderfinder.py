@@ -9,7 +9,7 @@ import os
 from typing import Dict, List, Optional, Tuple
 
 from antismash.common import path, subprocessing, utils
-from antismash.common.secmet import CDSFeature, Record
+from antismash.common.secmet import CDSFeature, Module, Record
 
 from .html_output import will_handle
 from .results import CandidateClusterPrediction, modify_substrate
@@ -30,8 +30,9 @@ def find_split_module_chains(cds_features: List[CDSFeature], record: Record) -> 
     for cds in cds_features:
         for module in cds.modules:
             if len(module.parent_cds_names) > 1:
-                head, tail = module.parent_cds_names
-                chains[record.get_cds_by_name(head)] = record.get_cds_by_name(tail)
+                parents = (record.get_cds_by_name(name) for name in module.parent_cds_names)
+                head, tail = sorted(parents, reverse=cds.location.strand == -1)
+                chains[head] = tail
     return chains
 
 
@@ -69,9 +70,9 @@ def analyse_biosynthetic_order(nrps_pks_features: List[CDSFeature],
         pks_chains = {}
         if not hybrid_count:
             pks_chains = find_split_module_chains(pks_features, record)
-        # If more than three PKS cds features, use dock_dom_analysis if possible to identify order
-        # since this will grow as n!, an upper limit is also required
-        if 3 < len(pks_features) and len(pks_features) - len(pks_chains) < 11 and not nrps_count and not hybrid_count:
+        # use docking domain analysis, if possible, to identify order
+        # since this will grow as n!, an upper limit is required
+        if 2 <= len(pks_features) <= 11 + len(pks_chains) and not nrps_count and not hybrid_count:
             logging.debug("CandidateCluster %d monomer ordering method: domain docking analysis",
                           candidate_cluster_number)
             geneorder = perform_docking_domain_analysis(pks_features, pks_chains)
@@ -105,25 +106,26 @@ def find_candidate_cluster_modular_enzymes(cds_features: List[CDSFeature]) -> Tu
                 a count of NRPS-only features
                 a count of hybrid features
     """
+    def is_pks_module(module: Module) -> bool:
+        domain_names = set(domain.domain for domain in module.domains)
+        return bool(domain_names.intersection({"PKS_KS", "PKS_AT"}))
+
+    def is_nrps_module(module: Module) -> bool:
+        domain_names = set(domain.domain for domain in module.domains)
+        return bool(domain_names.intersection({"AMP-binding", "A-OX", "Condensation"}))
+
     pks_features = []
     nrps_count = 0
     hybrid_count = 0
     for cds in cds_features:
-        classification = cds.nrps_pks.type
-        if "PKS" in classification and "NRPS" not in classification:
-            pks_features.append(cds)
-        elif "PKS" not in classification and "NRPS" in classification:
-            nrps_count += 1
-        elif "PKS/NRPS" in classification:
-            domain_names = set(cds.nrps_pks.domain_names)
-            contains_nrps = domain_names.intersection({"AMP-binding", "A-OX", "Condensation"})
-            contains_pks = domain_names.intersection({"PKS_KS", "PKS_AT"})
-            if contains_pks and not contains_nrps:
-                pks_features.append(cds)
-            # the case of both single pks domain and nrps domain(s) is ignored
-            # because that construction isn't meaningful
-        elif "Hybrid" in classification:
+        has_pks = any(is_pks_module(module) for module in cds.modules if module.is_complete())
+        has_nrps = any(is_nrps_module(module) for module in cds.modules if module.is_complete())
+        if has_nrps and has_pks:
             hybrid_count += 1
+        elif has_pks:
+            pks_features.append(cds)
+        elif has_nrps:
+            nrps_count += 1
     return pks_features, nrps_count, hybrid_count
 
 

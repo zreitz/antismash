@@ -295,7 +295,9 @@ class Record:
         for i in range(index, len(self._regions)):
             self._region_numbering[self._regions[i]] = i + 1  # 1-indexed
         # link any relevant CDS features
-        self._link_region_to_cds_features(region)
+        for cds in self.get_cds_features_within_location(region.location):
+            region.add_cds(cds)
+            cds.region = region
 
     def get_regions(self) -> Tuple[Region, ...]:
         """ The Region features in the record representing regions of interest """
@@ -533,11 +535,11 @@ class Record:
         index = bisect.bisect_left(self._cds_features, cds_feature)
         self._cds_features.insert(index, cds_feature)
         self._link_cds_to_parent(cds_feature)
-        location_checksum = _location_checksum(cds_feature)
-        if location_checksum in self._cds_by_location:
+        location_key = str(cds_feature.location)
+        if location_key in self._cds_by_location:
             raise SecmetInvalidInputError(
                 f"Multiple CDS features have the same location: {cds_feature.location}")
-        self._cds_by_location[location_checksum] = cds_feature
+        self._cds_by_location[location_key] = cds_feature
         if cds_feature.get_name() in self._cds_by_name:
             error = SecmetInvalidInputError("multiple CDS features have the same name for mapping: %s" %
                                             cds_feature.get_name())
@@ -550,7 +552,7 @@ class Record:
                     any(map(cds_feature.overlaps_with, self.get_genes_by_name(cds_feature.get_name())))):
                 raise error
 
-            new = f"{cds_feature.locus_tag}_{location_checksum}"
+            new = f"{cds_feature.locus_tag}_{_location_checksum(cds_feature)}"
             cds_feature.locus_tag = new
             assert cds_feature.get_name() not in self._cds_by_name
         self._cds_by_name[cds_feature.get_name()] = cds_feature
@@ -843,23 +845,6 @@ class Record:
             for collection in collections:
                 if cds.is_contained_by(collection):
                     collection.add_cds(cds)
-
-    def _link_region_to_cds_features(self, region: Region) -> None:
-        """ connect the given cluster to every CDS feature within it's range """
-        assert isinstance(region, Region)
-        # quickly find the first cds with equal start
-        index = bisect.bisect_left(self._cds_features, region)
-        # move backwards until we find one that doesn't overlap
-        while index >= 1 and self._cds_features[index - 1].is_contained_by(region):
-            index -= 1
-        # move forwards, adding to the cluster until a cds doesn't overlap
-        while index < len(self._cds_features):
-            cds = self._cds_features[index]
-            if not cds.is_contained_by(region):
-                break
-            region.add_cds(cds)
-            cds.region = region
-            index += 1
 
     def get_aa_translation_from_location(self, location: FeatureLocation,
                                          transl_table: Union[str, int] = None) -> Seq:
