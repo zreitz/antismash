@@ -343,11 +343,17 @@ RULE aminocoumarin
     NEIGHBOURHOOD 10
     CONDITIONS novK or novJ or novI or novH or SpcDK_cou
 
-RULE siderophore
+RULE dmdr-siderophore
     CATEGORY other
     CUTOFF 20
     NEIGHBOURHOOD 5
-    CONDITIONS IucA_IucC
+    CONDITIONS A_iucA_sid or A_SbnE_sid or B_sid or C_sid or Cprime_sid
+
+RULE not-siderophore
+    CATEGORY other
+    CUTOFF 20
+    NEIGHBOURHOOD 5
+    CONDITIONS A_iucA_non-sid or A_SbnE_non-sid or B_non-sid or Cprime_non
 
 RULE ectoine
     CATEGORY other
@@ -502,3 +508,4 @@ RULE pyrrolidine
     CUTOFF 10
     NEIGHBOURHOOD 10
     CONDITIONS Glycos_transf_1 and Alpha-amylase and Aminotran_3 and DXP_synthase_N
+

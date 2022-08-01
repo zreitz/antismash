@@ -295,3 +295,12 @@ Thiaglutamate_G_RRE	RRE-peptidase fusion protein in a 3-thiaglutamate cluster	25
 Thiaglutamate_I_RRE	RRE-DUF fusion protein in a 3-thiaglutamate cluster	25	RREFam027.hmm
 Thiaglutamate_B_RRE	RRE-LanB fusion protein in a 3-thiaglutamate cluster	25	RREFam028.hmm
 PlpY_RRE	Discrete RRE protein in an alpha-keto beta-amino acid containing peptide cluster	25	RREFam029.hmm
+A_iucA_non-sid	A_iucA_non-sid	20	A_iucA_non-sid.hmm
+A_SbnE_non-sid	A_SbnE_non-sid	20	A_SbnE_non-sid.hmm
+B_non-sid	B_non-sid	20	B_non-sid.hmm
+Cprime_non	Cprime_non	20	Cprime_non.hmm
+A_iucA_sid	A_iucA_sid	20	A_iucA_sid.hmm
+A_SbnE_sid	A_SbnE_sid	20	A_SbnE_sid.hmm
+B_sid	B_sid	20	B_sid.hmm
+C_sid	C_sid	20	C_sid.hmm
+Cprime_sid	Cprime_sid	20	Cprime_sid.hmm
