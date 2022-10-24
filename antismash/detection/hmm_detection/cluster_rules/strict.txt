@@ -2,9 +2,17 @@
 
 # Cutoffs and neighbourhoods are given in kilobases
 
-RULE triserine
+RULE 23-DHB
+    CATEGORY other
+    DESCRIPTION 2,3-DHB
+    CUTOFF 5
+    NEIGHBOURHOOD 5
+    CONDITIONS SMCOG1001 and SMCOG1018 and SMCOG1027
+
+RULE NRPS-Te
     CATEGORY NRPS
-    DESCRIPTION Triserine-based catechol siderophore
+    DESCRIPTION non-ribosomal peptide synthase with a Te domain
     CUTOFF 20
     NEIGHBOURHOOD 20
-    CONDITIONS cds(Condensation and AMP-binding) and SMCOG1001 and SMCOG1018 and SMCOG1027
+    CONDITIONS cds(Condensation and AMP-binding and Thioesterase)
+

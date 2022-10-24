@@ -1,5 +1,6 @@
 Condensation	Condensation domain	20	Condensation.hmm
 AMP-binding	Adenylation domain	20	AMP-binding.hmm
+Thioesterase	thioesterase	20	Thioesterase.hmm
 SMCOG1001	short-chain_dehydrogenase/reductase_SDR (EntA)	20	SMCOG1001.hmm
 SMCOG1027	isochorismatase (EntB)	20	SMCOG1027.hmm
 SMCOG1018	isochorismate_synthase (EntC)	20	SMCOG1018.hmm
