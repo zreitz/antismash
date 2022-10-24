@@ -1,0 +1,131 @@
+	Assembly	Strain	NRPS	A1.Prediction	A1.Stachelhaus	A2.Prediction	A2.Stachelhaus	Edomain
+0	GCF_003403135.1_ASM340313v1_genomic	Dickeya dianthicola	DZA65_RS15570	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+1	GCF_000147055.1_ASM14705v1_genomic	Dickeya dadantii 3937	DDA3937_RS14685	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+2	GCF_000281085.1_ASM28108v1_genomic	Catenovulum agarivorans YM01	WSC_RS0118585	ala	DtwanCIVYK	ser	DVWHFSLVDK	False
+3	GCF_015163655.1_ASM1516365v1_genomic	Xenorhabdus griffiniae	IQ211_RS08680	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+4	GCF_005281455.1_ASM528145v1_genomic	Acinetobacter nosocomialis M2	FDQ49_RS00680	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+5	GCF_015999465.1_ASM1599946v1_genomic	Lonsdalea populi	I6N93_RS11265	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+6	GCF_003934295.1_ASM393429v1_genomic	Dickeya lacustris	DSN64_RS12980	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+7	GCF_006517625.1_ASM651762v1_genomic	Mixta tenebrionis	FKM52_RS08810	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+8	GCF_003610465.1_ASM361046v1_genomic	Xenorhabdus ehlersii	BDE27_RS01015	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+9	GCF_019426345.1_ASM1942634v1_genomic	Marinomonas lutimaris	KPL72_RS12330	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+10	GCF_002858935.1_ASM285893v1_genomic	Pantoea endophytica	PZBJ_RS06540	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+11	GCF_003515985.1_ASM351598v1_genomic	Lonsdalea britannica	CKQ53_RS17175	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+12	GCF_001721185.1_ASM172118v1_genomic	Xenorhabdus hominickii	A9255_RS12790	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+13	GCF_013350005.1_ASM1335000v1_genomic	Methylocystis silviterrae	HUN39_RS11430	gly	DVGnfIvVeK	ser	DVWHFSLVDK	False
+14	GCF_009817885.1_ASM981788v1_genomic	Serratia rhizosphaerae	FO014_RS23250	asp	DSWdmGyVDK	ser	DVWHFSLVDK	True
+15	GCF_001112925.1_8016_2_91_genomic	Yersinia nurmii	AD970_RS07840	gln	DsWdmGyIDK	ser	DVWHFSLVDK	False
+16	GCF_013372285.1_ASM1337228v1_genomic	Marinomonas primoryensis	MP3633_RS11990	gln	DtWdyGyIDK	ser	DVWHFSLVDK	True
+17	GCF_016306625.1_ASM1630662v1_genomic	Xenorhabdus lircayensis	H8A87_RS16390	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+18	GCF_013423485.1_ASM1342348v1_genomic	Azospirillum oleiclasticum	HL658_RS13920	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+19	GCF_012911865.1_ASM1291186v1_genomic	Shewanella salipaludis	HC757_RS02270	leu	DtWaLniVyK	ser	DVWHFSLVDK	False
+20	GCF_900107885.1_IMG-taxon_2597490349_annotated_assembly_genomic	Lonsdalea quercina	BLU64_RS06410	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+21	GCF_000711805.1_ASM71180v1_genomic	Vibrio rhizosphaerae DSM 18581	BS26_RS09730	gln	DAwDLGcVDK	ser	DVWHFSLVDK	True
+22	GCF_000964255.1_ASM96425v1_genomic	Teredinibacter turnerae	H154_RS13620	asp	DSWdgGlVDK	ser	DVWHFSLVDK	False
+23	GCF_002082175.1_ASM208217v1_genomic	Streptomyces violaceoruber	B1H20_RS28310	ser	DVWHFSLVDK	ser	DVqHcShaaK	False
+24	GCF_900162645.1_V_palustris_CECT9027T_Velvet_Prokka_EMBL_genomic	Vibrio palustris	VPAL9027_RS15530	gln	DAwDmGfVDK	ser	DVWHFSLVDK	False
+25	GCF_016888445.1_ASM1688844v1_genomic	Marinomonas ostreistagni	JQX58_RS00090	asp	DSWdwGyVDK	ser	DVWHFSLVDK	True
+26	GCF_016026735.1_ASM1602673v1_genomic	Serratia rubidaea	I6G83_RS17370	asp	DSWdmGyVDK	ser	DVWHFSLVDK	True
+27	GCF_003325475.1_ASM332547v1_genomic	Chromobacterium phragmitis	DK842_RS18525	orn	DgEdLGfIsK	ser	DVWHFSLVDK	True
+28	GCF_003259175.1_ASM325917v1_genomic	Marinomonas shanghaiensis	DKT73_RS00075	gln	DtwDyGyVDK	ser	DVWHFSLVDK	False
+29	GCF_014489615.1_ASM1448961v1_genomic	Streptomyces genisteinicus	IAG43_RS15845	ser	DVWHFSLVDK	ser	DVqHcShaaK	False
+30	GCF_014596085.1_ASM1459608v1_genomic	Azospirillum tabaci	H0B54_RS24705	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+31	GCF_016906185.1_ASM1690618v1_genomic	Streptomyces californicus	I6J39_RS28155	ser	DVWHFSLVDK	ser	DVqHcShaaK	False
+32	GCF_900163965.1_V_ruber_CECT7878T_Velvet_Prokka_EMBL_genomic	Vibrio ruber DSM 16370	VR7878_RS17075	gln	DAwDLGcVDK	ser	DVWHFSLVDK	True
+33	GCF_004421005.1_ASM442100v1_genomic	Massilia plicata	E1742_RS00985	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+34	GCF_000214215.1_ASM21421v1_genomic	Marinomonas posidonica IVIA-Po-181	MAR181_RS11030	gln	DtwDyGyVDK	ser	DVWHFSLVDK	False
+35	GCF_900460525.1_28863_B01_genomic	Yersinia kristensenii	DX162_RS08970	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
+36	GCF_003668555.1_ASM366855v1_genomic	Notoacmeibacter ruber	D8780_RS10375	gln	DslDLGlVDK	ser	DVWHFSLIDK	False
+37	GCF_000027225.1_ASM2722v1_genomic	Xenorhabdus bovienii SS-2004	XBJ1_RS06200	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+38	GCF_016807805.1_ASM1680780v1_genomic	Xanthobacter dioxanivorans	EZH22_RS22280	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+39	GCF_000025065.1_ASM2506v1_genomic	Dickeya parazeae Ech586	DD586_RS13885	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+40	GCF_014855505.1_ASM1485550v1_genomic	Musicola keenii	HEP82_RS14610	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+41	GCF_002196515.1_ASM219651v1_genomic	Vibrio gazogenes	BSQ33_RS15285	gln	DAwDLGcVDK	ser	DVWHFSLVDK	True
+42	GCF_003314975.1_ASM331497v1_genomic	Marinomonas aquiplantarum	DFP76_RS06545	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+43	GCF_001617625.1_ASM161762v1_genomic	Microbulbifer thermotolerans	A3224_RS14710	asp	DSWdaGlVDK	ser	DVWHFSLVDK	False
+44	GCF_002812485.1_ASM281248v1_genomic	Dickeya fangzhongdai	CVE23_RS15095	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+45	GCF_014635885.1_ASM1463588v1_genomic	Acinetobacter vivianii	IEV36_RS01935	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+46	GCF_002811195.1_ASM281119v1_genomic	Pantoea rodasii	PRCB_RS18845	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+47	GCF_000312485.1_ASM31248v1_genomic	Yersinia massiliensis CCUG 53443	BN68_RS08060	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
+48	GCF_001855275.1_ASM185527v1_genomic	Chromobacterium vaccinii	BKX93_RS01150	arg	DgeDmGfIsK	ser	DVWHFSLVDK	True
+49	GCF_900095885.1_Daq1742_genomic	Dickeya aquatica	DAQ1742_RS05780	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+50	GCF_020005195.1_ASM2000519v1_genomic	Azospirillum agricola	JN22_RS12870	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+51	GCF_022554105.1_ASM2255410v1_genomic	Microbulbifer elongatus	L3N38_RS00420	asp	DSWdaGlVDK	ser	DVWHFSLVDK	False
+52	GCF_000196795.1_ASM19679v1_genomic	Acinetobacter oleivorans DR1	AOLE_RS09970	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+53	GCF_007827425.1_ASM782742v1_genomic	Azospirillum brasilense	OH82_RS16910	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+54	GCF_001908105.1_ASM190810v1_genomic	Xenorhabdus eapokensis	Xedl_RS08670	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+55	GCF_003989665.1_ASM398966v1_genomic	Azospirillum doebereinerae	EJ913_RS19300	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+56	GCF_014651115.1_ASM1465111v1_genomic	Streptomyces inusitatus	IE247_RS17650	ser	DVWHFSLVDK	ser	DVqHcShagK	False
+57	GCF_014083925.1_ASM1408392v1_genomic	Vibrio spartinae	Vspart_RS06830	gln	DAwDLGcVDK	ser	DVWHFSLVDK	True
+58	GCF_001908095.1_ASM190809v1_genomic	Xenorhabdus thuongxuanensis	Xentx_RS09545	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+59	GCF_000023545.1_ASM2354v1_genomic	Musicola paradisiaca Ech703	DD703_RS07465	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+60	GCF_009372235.1_ASM937223v1_genomic	Dickeya oryzae	FAZ14_RS03215	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+61	GCF_001895205.1_ASM189520v1_genomic	Vibrio injenensis	BSR11_RS14055	gln	DAwDLGfVDK	ser	DVWHFSLVDK	True
+62	GCF_016909495.1_ASM1690949v1_genomic	Pantoea coffeiphila	JOE09_RS21280	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+63	GCF_012271765.1_ASM1227176v1_genomic	Erwinia rhapontici	FVB43_RS18140	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+64	GCF_001402875.1_ASM140287v1_genomic	Blastochloris viridis	BVIR_RS15180	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+65	GCF_019844095.1_ASM1984409v1_genomic	Erwinia persicina	K6L24_RS07905	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+66	GCF_900114705.1_IMG-taxon_2597490347_annotated_assembly_genomic	Rugamonas rubra	BM252_RS21615	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+67	GCF_016906065.1_ASM1690606v1_genomic	Marinomonas foliarum	JSY38_RS03010	gln	DtwDyGyVDK	ser	DVWHFSLVDK	True
+68	GCF_017498685.1_ASM1749868v1_genomic	Yersinia ruckeri	YR821_RS14120	gln	DAwDaGlVDK	ser	DVWHFSLVDK	False
+69	GCF_000023565.1_ASM2356v1_genomic	Dickeya chrysanthemi Ech1591	DD1591_RS06640	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+70	GCF_009831415.1_ASM983141v1_genomic	Yersinia canariae	F0T03_RS18195	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
+71	GCF_011045115.1_ASM1104511v1_genomic	Mesorhizobium zhangyense	G6N74_RS18790	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+72	GCF_003856525.1_ASM385652v1_genomic	Vibrio viridaestus	EES38_RS19245	gln	DAwDmGfVDK	ser	DVWHFSLVDK	False
+73	GCF_009811315.1_ASM981131v1_genomic	Vibrio atypicus	GVO60_RS09460	gln	DAwDLGfVDK	ser	DVWHFSLVDK	True
+74	GCF_007858975.2_ASM785897v2_genomic	Dickeya poaceiphila	Dpoa569_RS05410	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+75	GCF_003315515.1_ASM331551v1_genomic	Brenneria salicis ATCC 15712 = DSM 30166	DES54_RS09905	asp	DSWdmGyVDK	ser	DVWHFSLVDK	True
+76	GCF_001855575.1_ASM185557v1_genomic	Chromobacterium sphagni	BI347_RS21720	arg	DgeDmGfIsK	ser	DVWHFSLVDK	True
+77	GCF_007431345.1_ASM743134v1_genomic	Chitinimonas arctica	FNU76_RS12990	gln	DAwDmGfVDK	ser	DVWHFSLVDK	True
+78	GCF_002887555.1_ASM288755v1_genomic	Dickeya zeae	C1O30_RS14290	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+79	GCF_003600645.1_ASM360064v1_genomic	Yersinia rochesterensis	DXZ79_RS17110	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
+80	GCF_014211975.1_ASM1421197v1_genomic	Teredinibacter haidensis	H5715_RS06970	asp	DSWdaGlVDK	ser	DVWHFSLVDK	False
+81	GCF_001037465.1_ASM103746v1_genomic	Xenorhabdus khoisanae	AB204_RS13165	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+82	GCF_002846995.1_ASM284699v1_genomic	Dickeya solani	BJJ98_RS19295	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+83	GCF_000192865.1_ASM19286v1_genomic	Marinomonas mediterranea MMB-1	MARME_RS06845	glu	DsWdFGyVDK	ser	DVWHFSLVDK	True
+84	GCF_002055515.1_ASM205551v1_genomic	Acinetobacter calcoaceticus	BUM88_RS09525	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+85	GCF_003028855.1_ASM302885v1_genomic	Massilia armeniaca	C9I28_RS13430	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+86	GCF_000425385.1_ASM42538v1_genomic	Pseudoduganella violaceinigra DSM 15887	H597_RS32595	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+87	GCF_001471275.2_ASM147127v2_genomic	Vibrio alginolyticus	AL553_RS11855	gln	sfwDLGfVDK	ser	DVWHFSLVDK	True
+88	GCF_018390695.1_ASM1839069v1_genomic	Ancylobacter sonchi	KHC28_RS01775	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+89	GCF_019740315.1_ASM1974031v1_genomic	Oceanobacter mangrovi	K6123_RS11730	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+90	GCF_003113265.1_ASM311326v1_genomic	Methylosinus sporium	C5689_RS15865	gly	DVGnfIvVeK	ser	DVWHFSLVDK	False
+91	GCF_016411865.1_ASM1641186v1_genomic	Acuticoccus mangrovi	JCR33_RS23885	gln	DslDLGlVDK	ser	DVWHFSLIDK	False
+92	GCF_003390675.1_ASM339067v1_genomic	Vibrio anguillarum	DEB08_RS08870	gln	DAwDLGfVDK	ser	DVWHFSLVDK	True
+93	GCF_016890085.1_ASM1689008v1_genomic	Chromobacterium violaceum	I6K03_RS17155	orn	DgEdLGfIsK	ser	DVWHFSLVDK	True
+94	GCF_013377785.1_ASM1337778v1_genomic	Ruegeria haliotis	HW561_RS16280	gln	DAwDLGVVDK	ser	DVWHFSLIDK	False
+95	GCF_003386665.1_ASM338666v1_genomic	Xenorhabdus cabanillasii	BDD26_RS12295	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+96	GCF_000784735.1_ASM78473v1_genomic	Dickeya undicola	OB87_RS02500	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+97	GCF_016064815.1_ASM1606481v1_genomic	Acinetobacter seifertii	I8T81_RS09875	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+98	GCF_003119195.2_ASM311919v2_genomic	Azospirillum baldaniorum	Sp245p_RS25095	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+99	GCF_010078235.1_ASM1007823v1_genomic	Undibacterium crateris	EYB48_RS03770	asp	DslDLGMVDK	ser	DVWHFSLVDK	False
+100	GCF_021083375.1_ASM2108337v1_genomic	Chromobacterium piscinae	LQR30_RS08455	arg	DgeDmGfIsK	ser	DVWHFSLVDK	True
+101	GCF_017876675.1_ASM1787667v1_genomic	Arthrobacter stackebrandtii	JOF48_RS17775	asp	DSWdLGfVDK	ser	DVWHFSLVDK	True
+102	GCF_009914055.1_ASM991405v1_genomic	Mixta intestinalis	C7M51_RS10305	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+103	GCF_000508165.1_SOAPdenovo_for_version_v2.01_of_the_Marinomonas_sp._D104_genome_genomic	Marinomonas profundimaris	D104_RS32350	gln	DtwDyGyVDK	ser	DVWHFSLVDK	True
+104	GCF_003722355.1_ASM372235v1_genomic	Methylocystis hirsuta	D1O30_RS04515	gly	DVGnfIvVeK	ser	DVWHFSLVDK	False
+105	GCF_000428465.1_ASM42846v1_genomic	Chitinimonas koreensis DSM 17726	F559_RS26010	gln	DAwDLGcVDK	ser	DVWHFSLVDK	True
+106	GCF_000372845.1_ASM37284v1_genomic	Methylocystis rosea SV97	A3OO_RS0105735	gly	DVGnfIvVeK	ser	DVWHFSLVDK	False
+107	GCF_019780885.1_ASM1978088v1_genomic	Azospirillum formosense	HLK65_RS30750	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+108	GCF_011578045.1_ASM1157804v1_genomic	Acinetobacter shaoyimingii	G8E00_RS09300	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+109	GCF_014284235.1_ASM1428423v1_genomic	Undibacterium curvum	H8K43_RS11305	asp	DslDLGMVDK	ser	DVWHFSLVDK	False
+110	GCF_001123825.1_5139_2_1_genomic	Yersinia thracica	AE440_RS01640	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
+111	GCF_902170305.1_IP38850_genomic	Yersinia alsatica	FTA96_RS17535	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
+112	GCF_005484965.1_ASM548496v1_genomic	Brenneria nigrifluens DSM 30175 = ATCC 13028	EH206_RS19910	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+113	GCF_001687365.1_ASM168736v1_genomic	Pararhizobium polonicum	ADU59_RS10630	asp	DSWdqGfVDK	ser	DVWHFSLVDK	True
+114	GCF_002632615.1_ASM263261v1_genomic	Xenorhabdus miraniensis	Xmir_RS00055	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+115	GCF_004124235.1_ASM412423v1_genomic	Yersinia hibernica	D5F51_RS19095	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
+116	GCF_001050515.1_ASM105051v1_genomic	Erwinia piriflorinigrans CFBP 5888	EPIR_RS10815	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+117	GCF_002082585.1_ASM208258v1_genomic	Kitasatospora albolonga	B7C62_RS30935	ser	DVWHFSLVDK	ser	DVqHcShaaK	False
+118	GCF_003115815.1_ASM311581v1_genomic	Brenneria roseae subsp. americana	B4923_RS08480	gln	DAweLGyVDK	ser	DVWHFSLVDK	False
+119	GCF_003666245.1_ASM366624v1_genomic	Brenneria alni	BIY29_RS09115	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+120	GCF_000940805.1_ASM94080v1_genomic	Gynuella sunshinyii YC6258	YC6258_RS12020	gln	DtWdlGfIDK	ser	DVWHFSLVDK	True
+121	GCF_001485335.1_D_1.0_genomic	Type-D symbiont of Plautia stali	PSSD_RS21240	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+122	GCF_001676875.1_ASM167687v1_genomic	Chromobacterium subtsugae	MY55_RS16235	arg	DgeDmGfIsK	ser	DVWHFSLVDK	True
+123	GCF_900129155.1_IMG-taxon_2582581270_annotated_assembly_genomic	Marinomonas polaris DSM 16579	BUA59_RS01485	gln	DslDLGlVDK	ser	DVWHFSLVDK	False
+124	GCF_001656035.1_ASM165603v1_genomic	Yersinia entomophaga	PL78_RS09760	gln	DsWdmGyIDK	ser	DVWHFSLVDK	False
+125	GCF_002127535.1_ASM212753v1_genomic	Xenorhabdus vietnamensis	Xvie_RS07470	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+126	GCF_002111585.1_ASM211158v1_genomic	Lonsdalea iberica	AU511_RS15505	gln	DsWdmGyIDK	ser	DVWHFSLVDK	True
+127	GCF_004362145.1_ASM436214v1_genomic	Marinomonas balearica	DFP79_RS02375	glu	DsWdFGyVDK	ser	DVWHFSLVDK	True
+128	GCF_002909415.1_ASM290941v1_genomic	Arthrobacter glacialis	CVS28_RS14210	asp	DSWdLGfVDK	ser	DVWHFSLIDK	True
+129	GCF_000754805.1_YFB_genomic	Yersinia frederiksenii ATCC 33641	DJ58_RS13910	gln	DsWdmGfIDK	ser	DVWHFSLVDK	False
