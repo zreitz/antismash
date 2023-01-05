@@ -657,3 +657,11 @@ RULE aminopolycarboxylic-acid
     CUTOFF 10
     NEIGHBOURHOOD 5
     CONDITIONS AesA and AesB and AesC
+
+RULE isonitrile
+	CATEGORY other
+	DESCRIPTION Isonitrile-containing compounds (10.1073/pnas.2110293119)
+	EXAMPLE NCBI AL123456.3 106734-117539       # BGC0001627
+	CUTOFF 5
+	NEIGHBOURHOOD 5
+	CONDITIONS TauD and FcoT
