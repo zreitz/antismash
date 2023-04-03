@@ -77,3 +77,17 @@ RULE phosphonate-like
     CUTOFF 20
     NEIGHBOURHOOD 20
     CONDITIONS phosphonates-like
+
+RULE NRP-metallophore-like
+    CATEGORY other
+    DESCRIPTION NRP metallophore chelator biosynthesis genes without an NRPS
+    SUPERIORS NRP-metallophore
+    CUTOFF 20
+    NEIGHBOURHOOD 20
+    CONDITIONS 		# Same conditions as NRP-metallophore, without the NRPS
+			(IBH_Asp and not SBH_Asp) or IBH_His or TBH_Asp or       # OHHis/OHAsp, exclude syringomycins
+			CyanoBH_Asp1 or CyanoBH_Asp2 or                          # Cyanobacterial OHAsp
+			IPL or SalSyn or (EntA and EntC) or                      # Sal/DHB
+			(GrbD and GrbE) or (FbnL and FbnM) or PvdO or PvdP or    # Graminine/DMAQ/PVD
+			(Orn_monoox and not (KtzT or MetRS-like)) or             # Hydroxamate, exclude piperazates and hydrazides
+			Lys_monoox or VbsL                                       # Lys and vicibactin hydroxamates
