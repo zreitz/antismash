@@ -352,3 +352,5 @@ CntM	Staphylopine dehydrogenase found in opine-like zincophore clusters	100	CntM
 AesA	N-((2S)-2-amino-2-carboxyethyl)-L-glutamate dehydrogenase involved in APCA biosynthesis	300	AesA.hmm
 AesB	Pyridoxal-dependent decarboxylase involved in APCA biosynthesis	400	AesB.hmm
 AesC	N-(2-amino-2-carboxyethyl)-L-glutamate synthase involved in APCA biosynthesis	420	AesC.hmm
+Acetyltransf_8	Acetyltransferase (GNAT) domain	27	PF13523.hmm
+Formyl_trans_N	Formyl transferase	26	PF00551.hmm
