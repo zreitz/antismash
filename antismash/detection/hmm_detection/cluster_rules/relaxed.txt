@@ -97,18 +97,9 @@ RULE 23-DHB
 RULE Hydroxamate
     CATEGORY other
     DESCRIPTION Clusters containing a monooxygenase and an acetyl- or formyl-transferase
-    SUPERIORS NRP-metallophore
     CUTOFF 10
     NEIGHBOURHOOD 10
     CONDITIONS (Orn_monoox or Lys_monoox) and (Acetyltransf_8 or Formyl_trans_N)
-
-RULE Hydroxamate-broad
-    CATEGORY other
-    DESCRIPTION Broad monooxygenase and an acetyl- or formyl-transferase
-    SUPERIORS NRP-metallophore
-    CUTOFF 10
-    NEIGHBOURHOOD 10
-    CONDITIONS Lys_Orn_oxgnase and (Acetyltransf_8 or Formyl_trans_N)
 
 RULE bOH-AA-metallophore-like
     CATEGORY other
