@@ -78,20 +78,7 @@ RULE phosphonate-like
     NEIGHBOURHOOD 20
     CONDITIONS phosphonates-like
 
-RULE NRP-metallophore-like
-    CATEGORY other
-    DESCRIPTION NRP metallophore chelator biosynthesis genes without an NRPS
-    SUPERIORS NRP-metallophore
-    CUTOFF 20
-    NEIGHBOURHOOD 20
-    CONDITIONS 		# Same conditions as NRP-metallophore, without the NRPS
-			(IBH_Asp and not SBH_Asp) or IBH_His or TBH_Asp or       # OHHis/OHAsp, exclude syringomycins
-			CyanoBH_Asp1 or CyanoBH_Asp2 or                          # Cyanobacterial OHAsp
-			(EntA and EntC) or                                       # DHB
-			(GrbD and GrbE) or (FbnL and FbnM) or PvdO or PvdP or    # Graminine/DMAQ/PVD
-			Lys_monoox or VbsL                                       # Lys and vicibactin hydroxamates
-
-RULE Salicylate-containing
+RULE Salicylate
     CATEGORY other
     DESCRIPTION Clusters containing a salicylate synthase or EntC/IPL pair
     SUPERIORS NRP-metallophore
@@ -99,18 +86,66 @@ RULE Salicylate-containing
     NEIGHBOURHOOD 10
     CONDITIONS SalSyn or (IPL and EntC)
 
-RULE Hydroxamate-containing
+RULE 23-DHB
     CATEGORY other
-    DESCRIPTION Clusters containing an ornithine monooxygenase and an acetyl- or formyl-transferase
+    DESCRIPTION Clusters containing 2,3-DHB genes
     SUPERIORS NRP-metallophore
     CUTOFF 10
     NEIGHBOURHOOD 10
-    CONDITIONS Orn_monoox and (Acetyltransf_8 or Formyl_trans_N)
+    CONDITIONS EntA and EntC
 
-RULE Sal-Hydroxamate-FPs
+RULE Hydroxamate
     CATEGORY other
-    DESCRIPTION Probably false positives
-    SUPERIORS NRP-metallophore, Salicylate-containing, Hydroxamate-containing
-    CUTOFF 0
+    DESCRIPTION Clusters containing a monooxygenase and an acetyl- or formyl-transferase
+    SUPERIORS NRP-metallophore
+    CUTOFF 10
     NEIGHBOURHOOD 10
-    CONDITIONS Orn_monoox or IPL
+    CONDITIONS (Orn_monoox or Lys_monoox) and (Acetyltransf_8 or Formyl_trans_N)
+
+RULE Hydroxamate-broad
+    CATEGORY other
+    DESCRIPTION Broad monooxygenase and an acetyl- or formyl-transferase
+    SUPERIORS NRP-metallophore
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS Lys_Orn_oxgnase and (Acetyltransf_8 or Formyl_trans_N)
+
+RULE bOH-AA-metallophore-like
+    CATEGORY other
+    DESCRIPTION Clusters containing a siderophore clade of beta-hydroxylases
+    SUPERIORS NRP-metallophore
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS IBH_Asp or IBH_His or TBH_Asp or CyanoBH_Asp1 or CyanoBH_Asp2
+
+RULE Graminine
+    CATEGORY other
+    DESCRIPTION Clusters containing graminine biosynthesis
+    SUPERIORS NRP-metallophore
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS GrbD and GrbE
+
+RULE Dmaq
+    CATEGORY other
+    DESCRIPTION Clusters containing Dmaq biosynthesis
+    SUPERIORS NRP-metallophore
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS FbnL and FbnM
+
+RULE PVD-chromophore
+    CATEGORY other
+    DESCRIPTION Clusters containing pyoverdine chromophore maturation genes
+    SUPERIORS NRP-metallophore
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS PvdO or PvdP
+
+RULE Vicibactin-like
+    CATEGORY other
+    DESCRIPTION NRP metallophore chelator biosynthesis genes without an NRPS
+    SUPERIORS NRP-metallophore
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS 	VbsL

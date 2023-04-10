@@ -339,6 +339,7 @@ CyanoBH_Asp2	Cyanobacterial siderophore Asp beta-hydroxylase (standalone)	450	Cy
 IPL	Isopyruvate lyase	110	IPL.hmm
 Lys_monoox	Lysine N6-monooxygenase (Mycobactin-type)	300	Lys_monoox.hmm
 Orn_monoox	Ornithine N5-monooxygenase (Pyoverdine-type)	415	Orn_monoox.hmm
+Lys_Orn_oxgnase	Orn/Lys monooxygenase (Catch-all)	21	PF13434.hmm
 KtzT	Heme-dependent piperazate synthase (10.1038/nchembio.2411) not in siderophores	200	KtzT.hmm
 MetRS-like	Methionyl-tRNA synthase-like ligase (10.1038/s41467-021-27523-x) not in siderophores	360	MetRS-like.hmm
 PvdO	Oxidoreductase in pyoverdine chromophore maturation	250	PvdO.hmm
