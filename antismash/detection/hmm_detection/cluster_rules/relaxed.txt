@@ -97,6 +97,7 @@ RULE 23-DHB
 RULE Hydroxamate
     CATEGORY other
     DESCRIPTION Clusters containing a monooxygenase and an acetyl- or formyl-transferase
+    SUPERIORS NRP-metallophore
     CUTOFF 10
     NEIGHBOURHOOD 10
     CONDITIONS (Orn_monoox or Lys_monoox) and (Acetyltransf_8 or Formyl_trans_N)
@@ -135,7 +136,7 @@ RULE PVD-chromophore
 
 RULE Vicibactin-like
     CATEGORY other
-    DESCRIPTION NRP metallophore chelator biosynthesis genes without an NRPS
+    DESCRIPTION Clusters with vsbL, characteristic of vicibactin
     SUPERIORS NRP-metallophore
     CUTOFF 10
     NEIGHBOURHOOD 10
