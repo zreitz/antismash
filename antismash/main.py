@@ -40,7 +40,7 @@ from antismash.outputs import html, svg
 from antismash.support import genefinding
 from antismash.custom_typing import AntismashModule
 
-__version__ = "7.0.0beta2"
+__version__ = "7.dev"
 
 
 def _gather_analysis_modules() -> List[AntismashModule]:
@@ -202,7 +202,7 @@ def run_detection(record: Record, options: ConfigType,
         run_module(record, module, options, module_results, timings)
         results = module_results.get(module.__name__)
         if results:
-            assert isinstance(results, DetectionResults)
+            assert isinstance(results, DetectionResults), f"{module.__name__}, {type(results)}"
             for protocluster in results.get_predicted_protoclusters():
                 record.add_protocluster(protocluster)
             for region in results.get_predicted_subregions():
@@ -252,8 +252,6 @@ def run_module(record: Record, module: AntismashModule, options: ConfigType,
         Returns:
             None
     """
-    if module not in options.all_enabled_modules:
-        return
     previous_results = module_results.pop(module.__name__, None)
     results = None
     if previous_results is not None:
@@ -262,6 +260,8 @@ def run_module(record: Record, module: AntismashModule, options: ConfigType,
         results = module.regenerate_previous_results(previous_results, record, options)
         if results:
             module_results[module.__name__] = results
+    if module not in options.all_enabled_modules:
+        return
     assert results is None or isinstance(results, ModuleResults)
 
     logging.debug("Checking if %s should be run", module.__name__)
