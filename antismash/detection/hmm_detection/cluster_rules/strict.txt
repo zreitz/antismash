@@ -453,7 +453,7 @@ RULE NI-siderophore
     CATEGORY other
     DESCRIPTION NRPS-independent IucA/IucC-like siderophores
     CUTOFF 20
-    NEIGHBOURHOOD 5
+    NEIGHBOURHOOD 10
     CONDITIONS IucA_IucC
 
 RULE ectoine

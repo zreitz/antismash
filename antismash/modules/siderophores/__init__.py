@@ -7,81 +7,27 @@
 
 # start with standard library imports
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, TypeVar
 
 # then any imports from external modules, e.g. biopython, if relevant
 
 # then any imports from antismash
 from antismash.common import path
-from antismash.common.module_results import ModuleResults
 from antismash.common.secmet import Record
 from antismash.config import ConfigType
 from antismash.config.args import ModuleArgs
 from antismash.common import hmmer
 
-from .siderophore_analysis import run_siderophore_analysis
-
-
 # then any local file imports, e.g. from .somefile import..., if relevant
+from .siderophore_classes import SiderophoreAnalysisResults
+from .siderophore_analysis import run_siderophore_analysis
+from ...common.secmet.features.antismash_domain import register_asdomain_variant
 
 NAME = "siderophores"
 SHORT_DESCRIPTION = "Predict NI-siderophore structural features"
 
-
-# define a results class, this is important as adding information to the record
-# during analysis will cause issues
-# for detailed examples, see any of the other analysis modules' implementations
-class SiderophoreAnalysisResults(ModuleResults):
-    """ Example results class for the analysis module template """  # TODO
-    schema_version = 1  # when the data format in the results changes, this needs to be incremented
-
-    # define whatever construction arguments are needed, record_id is required by the superclass
-    # it's good to keep any command line option values here to know when they're changed for --reuse-results
-    def __init__(self, record_id: str) -> None:
-        super().__init__(record_id)
-        self.some_other_information = []  # this could be added to during analysis
-
-    # implement a conversion to a JSON-compatible dictionary
-    # all elements must one of: str, int, float, list, or a dict of those types (this can recurse)
-    def to_json(self) -> Dict[str, Any]:
-        """ Constructs a JSON representation of this instance """
-
-        return {
-            "schema_version": self.schema_version,
-            "other": [str(item) for item in self.some_other_information],  # an example only
-        }
-
-    # once _all_ analysis modules have completed, their results are added with this method
-    # adding to the record during the analysis will cause issues
-    def add_to_record(self, record: Record) -> None:
-        """ Adds the analysis results to the record """
-        if record.id != self.record_id:
-            raise ValueError("Record to store in and record analysed don't match")
-        # any results would be added here  # TODO
-        # for an example of new features, see antismash.modules.tta
-        # for an example of qualifiers, see antismash.modules.t2pks
-        # any new feature types or qualifiers would be implemented in antismash.common.secmet,
-        #   and would need to be able to be converted to and from biopython's SeqFeature without loss
-        raise NotImplementedError()  # remove this when completed
-
-    # implement a conversion from the JSON-compatible data returned by to_json()
-    # this allows --results-reuse to avoid running the module again if not neccessary
-    @staticmethod
-    def from_json(json: Dict[str, Any], record: Record) -> Optional["SiderophoreAnalysisResults"]:
-        """ Constructs a new results instance from a JSON format and the
-            original record analysed. # TODO
-        """
-        # check that the previous data version is the same as current, if not, discard the results
-        if json["schema_version"] != SiderophoreAnalysisResults.schema_version:
-            return None
-
-        # the exact reconstruction depends on what details are stored
-        # to match the conversion to JSON that would be:
-        results = SiderophoreAnalysisResults(json["record_id"])
-        for other in json["other"]:
-            results.some_other_information.append(other)
-
-        return results
+# T = TypeVar("T", bound="SiderophoreDomain")
+# TOOL = "siderophores"
 
 
 def get_arguments() -> ModuleArgs:
@@ -191,3 +137,6 @@ def run_on_record(record: Record, results: SiderophoreAnalysisResults, _options:
     results = run_siderophore_analysis(record)
     # and return it
     return results
+
+
+#register_asdomain_variant(TOOL, TIGRDomain)
