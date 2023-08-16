@@ -1,1 +1,6 @@
 IucA_IucC	Siderophore synthase	30	IucA_IucC.hmm
+
+Pyridoxal_deC	Decarboxylase	27	Pyridoxal_deC.hmm
+Acetyltransf_8	Acetyltransferase	27	Acetyltransf_8.hmm
+Lys_Orn_oxgnase	Lys/Orn N-monooxygenase	21	Lys_Orn_oxgnase.hmm
+Penicil_amidase	Penicillin amidase	21	Penicil_amidase.hmm
