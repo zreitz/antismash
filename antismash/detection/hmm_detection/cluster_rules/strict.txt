@@ -449,9 +449,24 @@ RULE aminocoumarin
     NEIGHBOURHOOD 10
     CONDITIONS novK or novJ or novI or novH or SpcDK_cou
 
+RULE desABCD
+    CATEGORY other
+    DESCRIPTION Core desferrioxamine locus
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS Aminotran_5 and Lys_Orn_oxgnase and Acetyltransf_8 and IucA_IucC
+
+RULE desGH
+    CATEGORY other
+    DESCRIPTION Accessory desferrioxamine locus
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS Penicil_amidase and Acetyltransf_8
+
 RULE NI-siderophore
     CATEGORY other
     DESCRIPTION NRPS-independent IucA/IucC-like siderophores
+    SUPERIORS desABCD
     CUTOFF 20
     NEIGHBOURHOOD 5
     CONDITIONS IucA_IucC
