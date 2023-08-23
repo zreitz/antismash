@@ -462,14 +462,6 @@ RULE desGH
     CUTOFF 1
     NEIGHBOURHOOD 10
     CONDITIONS Penicil_amidase and Acetyltransf_8
-    
-RULE desGH-loose
-    CATEGORY other
-    DESCRIPTION Accessory desferrioxamine locus
-    SUPERIORS desGH
-    CUTOFF 10
-    NEIGHBOURHOOD 10
-    CONDITIONS Penicil_amidase and Acetyltransf_8
 
 RULE NI-siderophore
     CATEGORY other
