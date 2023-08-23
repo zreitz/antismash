@@ -454,7 +454,7 @@ RULE desABCD
     DESCRIPTION Core desferrioxamine locus
     CUTOFF 5
     NEIGHBOURHOOD 10
-    CONDITIONS (Aminotran_5 or Pyridoxal_deC) and Lys_Orn_oxgnase and Acetyltransf_8 and IucA_IucC	# Not sure which will win
+    CONDITIONS Pyridoxal_deC and Lys_Orn_oxgnase and Acetyltransf_8 and IucA_IucC
 
 RULE desGH
     CATEGORY other
