@@ -452,13 +452,21 @@ RULE aminocoumarin
 RULE desABCD
     CATEGORY other
     DESCRIPTION Core desferrioxamine locus
-    CUTOFF 10
+    CUTOFF 5
     NEIGHBOURHOOD 10
     CONDITIONS Aminotran_5 and Lys_Orn_oxgnase and Acetyltransf_8 and IucA_IucC
 
 RULE desGH
     CATEGORY other
     DESCRIPTION Accessory desferrioxamine locus
+    CUTOFF 1
+    NEIGHBOURHOOD 10
+    CONDITIONS Penicil_amidase and Acetyltransf_8
+    
+RULE desGH-loose
+    CATEGORY other
+    DESCRIPTION Accessory desferrioxamine locus
+    SUPERIORS desGH
     CUTOFF 10
     NEIGHBOURHOOD 10
     CONDITIONS Penicil_amidase and Acetyltransf_8
