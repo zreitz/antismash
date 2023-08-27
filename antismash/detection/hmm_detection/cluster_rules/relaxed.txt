@@ -9,3 +9,11 @@ RULE NI-siderophore
     CUTOFF 20
     NEIGHBOURHOOD 14  # for rhodopetrobactin
     CONDITIONS IucA_IucC
+
+RULE AsbABCDE
+    CATEGORY other
+    DESCRIPTION Petrobactin-like
+    RELATED AP_endonuc_2
+    CUTOFF 20
+    NEIGHBOURHOOD 10  # for rhodopetrobactin
+    CONDITIONS IucA_IucC and AMP-binding and PP-binding and 34-DHB-ligase

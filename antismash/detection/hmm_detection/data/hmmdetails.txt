@@ -1,1 +1,5 @@
 IucA_IucC	Siderophore synthase	30	IucA_IucC.hmm
+AMP-binding	Adenylation domain	20	AMP-binding.hmm
+PP-binding	Thiolation domain	20	PP-binding.hmm
+AP_endonuc_2	AsbF	31	PF01261.hmm
+34-DHB-ligase	AsbE	26	PF19468.hmm
