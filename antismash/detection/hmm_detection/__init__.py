@@ -31,7 +31,7 @@ NAME = "hmmdetection"
 SHORT_DESCRIPTION = "HMM signature detection"
 DETECTION_STAGE = DetectionStage.AREA_FORMATION
 
-_STRICTNESS_LEVELS = ["strict", "relaxed", "loose"]
+_STRICTNESS_LEVELS = ["relaxed"]
 
 
 def _get_dynamic_profiles() -> Dict[str, DynamicProfile]:
