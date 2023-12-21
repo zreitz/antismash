@@ -1,5 +1,6 @@
 HMMER3/f [3.3dev | June 2019]
-NAME  Query
+NAME  SidA
+ACC   SidA
 LENG  361
 ALPH  amino
 RF    no
