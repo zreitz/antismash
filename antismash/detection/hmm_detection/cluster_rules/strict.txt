@@ -746,4 +746,4 @@ RULE fungal-NRP-hydroxamate
     DESCRIPTION hydrogen cyanide
     CUTOFF 10
     NEIGHBOURHOOD 10
-    CONDITIONS cds(Condensation and AMP-binding) and sidA
+    CONDITIONS cds(Condensation and AMP-binding) and SidA
