@@ -740,3 +740,38 @@ RULE hydrogen-cyanide
     CUTOFF 5
     NEIGHBOURHOOD 5
     CONDITIONS Fer2_4 and cds(Pyr_redox_2 and Fer2_BFD) and DAO
+
+RULE desABCDGH-fused
+    CATEGORY custom
+    DESCRIPTION Core desferrioxamine locus
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS Pyridoxal_deC and Lys_Orn_oxgnase and Acetyltransf_8 and IucA_IucC and cds(Penicil_amidase and Acetyltransf_8)
+
+RULE desABCDGH
+    CATEGORY custom
+    DESCRIPTION Core desferrioxamine locus
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS Pyridoxal_deC and Lys_Orn_oxgnase and Acetyltransf_8 and IucA_IucC and Penicil_amidase
+
+RULE desGH-fused
+    CATEGORY custom
+    DESCRIPTION Accessory desferrioxamine locus
+    CUTOFF 0
+    NEIGHBOURHOOD 10
+    CONDITIONS cds(Penicil_amidase and Acetyltransf_8)
+
+RULE desGH
+    CATEGORY custom
+    DESCRIPTION Accessory desferrioxamine locus
+    CUTOFF 1
+    NEIGHBOURHOOD 10
+    CONDITIONS Penicil_amidase and Acetyltransf_8
+
+RULE desABCD
+    CATEGORY custom
+    DESCRIPTION Core desferrioxamine locus
+    CUTOFF 5
+    NEIGHBOURHOOD 10
+    CONDITIONS Pyridoxal_deC and Lys_Orn_oxgnase and Acetyltransf_8 and IucA_IucC

@@ -26,5 +26,9 @@
     "other": {
         "description": "Other",
         "version": 1
+    },
+    "custom": {
+        "description": "Custom rules not in vanilla antiSMASH",
+        "version": 1
     }
 }
